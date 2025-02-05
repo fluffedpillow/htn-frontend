@@ -1,0 +1,47 @@
+@import "./base.css";
+@import "./fonts.css";
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+#app {
+  min-height: 100vh;
+  background: #f2f2f2;
+}
+
+@media (prefers-color-scheme: dark) {
+  #app {
+    background: #2c3e50;
+  }
+}
+
+* {
+  box-sizing: border-box;
+
+  font-family: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+
+  --bg-color-main: #182027;
+  --fg-color-main: #a4a8a9;
+}
+
+.text-pretty {
+  font-family: "Satoshi", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "CastledownHeavy", "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  font-weight: 900;
+}
